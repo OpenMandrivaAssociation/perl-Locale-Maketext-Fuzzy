@@ -1,12 +1,12 @@
 %define realname   Locale-Maketext-Fuzzy
 
 Name:		perl-%{realname}
-Version:    0.02
-Release: %mkrel 3
-License:	GPL or Artistic
+Version:    0.10
+Release: %mkrel 1
+License:	MIT
 Group:		Development/Perl
 Summary:    Maketext from already interpolated strings 
-Source0:    http://search.cpan.org/CPAN/authors/id/A/AU/AUTRIJUS/%{realname}-%{version}.tar.bz2
+Source0:    http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/%{realname}-%{version}.tar.gz
 Url:		http://search.cpan.org/dist/%{realname}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel
