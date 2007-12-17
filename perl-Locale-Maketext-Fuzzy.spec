@@ -8,7 +8,6 @@ Group:		Development/Perl
 Summary:    Maketext from already interpolated strings 
 Source0:    http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/%{realname}-%{version}.tar.gz
 Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel
 BuildArch: noarch
 
