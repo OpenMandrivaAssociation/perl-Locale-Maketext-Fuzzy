@@ -2,7 +2,7 @@
 
 Name:		perl-%{realname}
 Version:    0.10
-Release: %mkrel 1
+Release: %mkrel 3
 License:	MIT
 Group:		Development/Perl
 Summary:    Maketext from already interpolated strings 
