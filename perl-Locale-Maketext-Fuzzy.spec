@@ -1,16 +1,18 @@
-%define realname   Locale-Maketext-Fuzzy
+%define upstream_name    Locale-Maketext-Fuzzy
+%define upstream_version 0.10
 
-Name:		perl-%{realname}
-Version:    0.10
-Release: %mkrel 4
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Maketext from already interpolated strings 
 License:	MIT
 Group:		Development/Perl
-Summary:    Maketext from already interpolated strings 
-Source0:    http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/%{realname}-%{version}.tar.gz
-Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	perl-devel
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module is a subclass of Locale::Maketext, with additional support for 
@@ -22,7 +24,7 @@ against
   [_1]: command not found.
 
 %prep
-%setup -q -n %{realname}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -44,4 +46,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
-
