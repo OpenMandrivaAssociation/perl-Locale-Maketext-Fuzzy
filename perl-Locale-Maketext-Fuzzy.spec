@@ -1,15 +1,14 @@
 %define upstream_name    Locale-Maketext-Fuzzy
-%define upstream_version 0.10
-
+%define upstream_version 0.11
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.11
+Release:	1
 
 Summary:	Maketext from already interpolated strings 
 License:	MIT
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/Locale-Maketext-Fuzzy-0.11.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -74,4 +73,5 @@ rm -rf %{buildroot}%{perl_vendorarch}
 
 * Sat Oct 01 2005 Michael Scherer <misc@mandriva.org> 0.02-1mdk
 - First mandriva package
+
 
