@@ -2,7 +2,7 @@
 %define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.11
-Release:	2
+Release:	3
 
 Summary:	Maketext from already interpolated strings 
 License:	MIT
