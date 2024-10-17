@@ -7,7 +7,7 @@ Release:	3
 Summary:	Maketext from already interpolated strings 
 License:	MIT
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/Locale-Maketext-Fuzzy-0.11.tar.gz
 
 BuildRequires:	perl-devel
