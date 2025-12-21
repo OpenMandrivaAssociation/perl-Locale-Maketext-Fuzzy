@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/Locale-Maketext-Fuzzy-0.11.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildArch:	noarch
 
