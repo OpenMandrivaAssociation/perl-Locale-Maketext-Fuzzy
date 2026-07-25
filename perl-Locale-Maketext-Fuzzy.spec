@@ -1,14 +1,14 @@
 %define upstream_name    Locale-Maketext-Fuzzy
 %define upstream_version 0.11
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.11
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Maketext from already interpolated strings 
 License:	MIT
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/Locale-Maketext-Fuzzy-0.11.tar.gz
+Url:		https://metacpan.org/dist/Locale-Maketext-Fuzzy
+Source0:	https://cpan.metacpan.org/authors/id/A/AU/AUDREYT/Locale-Maketext-Fuzzy-0.11.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
