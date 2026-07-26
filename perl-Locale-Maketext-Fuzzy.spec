@@ -1,8 +1,7 @@
 %define upstream_name    Locale-Maketext-Fuzzy
-%define upstream_version 0.11
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.11
+Release:	5
 
 Summary:	Maketext from already interpolated strings 
 License:	MIT
@@ -24,7 +23,7 @@ against
   [_1]: command not found.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -46,9 +45,7 @@ rm -rf %{buildroot}%{perl_vendorarch}
 %changelog
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.100.0-1mdv2010.0
 + Revision: 406068
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.10-4mdv2009.0
+- rebuild using %0.11 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.10-4mdv2009.0
 + Revision: 257644
 - rebuild
 
